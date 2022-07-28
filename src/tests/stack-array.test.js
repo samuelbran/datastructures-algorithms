@@ -44,4 +44,12 @@ describe("Stack data structure", () => {
     expect(stack.size()).toBe(1);
     expect(stack.peek()).toBe(5);
   });
+
+  test("clear() should clear the internal array", () => {
+    stack.push(5);
+    stack.push(8);
+    stack.clear();
+
+    expect(stack.size()).toBe(0);
+  });
 });

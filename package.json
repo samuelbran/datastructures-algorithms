@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest -o"
+    "test": "jest -o --collectCoverage",
+    "test-all": "jest --all --collectCoverage"
   },
   "author": "",
   "license": "ISC",
