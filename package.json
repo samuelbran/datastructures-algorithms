@@ -1,0 +1,15 @@
+{
+  "name": "codechallenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -o"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "jest": "^28.1.3"
+  }
+}
