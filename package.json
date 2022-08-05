@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest -o --collectCoverage",
+    "test": "jest -o",
     "test-all": "jest --all --collectCoverage"
   },
   "author": "",
