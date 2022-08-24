@@ -32,8 +32,7 @@ class DoublyLinkedList {
   }
 
   pop() {
-    if (!this.length === 0) return undefined;
-
+    if (this.length === 0) return undefined;
     let temp = this.tail;
 
     if (this.length === 1) {
@@ -84,14 +83,9 @@ class DoublyLinkedList {
   }
 
   get(index) {
-    if (index < 0 || index >= this.length) {
-      return undefined;
-    }
-
+    if (index < 0 || index >= this.length) return undefined;
     let temp = this.head;
 
-    // Start searching from head only if the provided index is minor that half
-    // of the list length, otherwise start from tail.
     if (index < this.length / 2) {
       for (let i = 0; i < index; i++) {
         temp = temp.next;
@@ -119,7 +113,7 @@ class DoublyLinkedList {
 
   insert(index, value) {
     if (index < 0 || index > this.length) return false;
-    if (index === this.length - 1) return this.push(value);
+    if (index === this.length) return this.push(value);
     if (index === 0) return this.unshift(value);
 
     let newNode = new Node(value);
@@ -136,7 +130,7 @@ class DoublyLinkedList {
   }
 
   remove(index) {
-    if (index < 0 || index >= this.length) return false;
+    if (index < 0 || index >= this.length) return undefined;
     if (index === this.length - 1) return this.pop();
     if (index === 0) return this.shift();
 
