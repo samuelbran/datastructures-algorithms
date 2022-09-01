@@ -9,5 +9,5 @@ function insertionSort(array) {
   }
   return array;
 }
-console.log(insertionSort([5, 6, 3, 2, 1]));
+
 module.exports = insertionSort;
